@@ -1,0 +1,64 @@
+.all{
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: row;
+    gap: 0.4rem;
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.form-control{
+    text-align: center;
+    width: 7rem;
+    height: 5rem;
+    font-size: xx-large;
+    font-weight: bolder;
+}
+.list{
+    color: white;
+    list-style-position: outside; 
+    width: max-content;
+    
+}
+.conlist1{
+    padding: 0.5rem;
+    width: 32rem;
+    background-color: rgb(98, 156, 222);
+    border-radius: 1rem;
+    margin-top: 1rem;
+}
+.conlist2{
+    margin-top: 0.5rem;
+    padding: 0.5rem;
+    width: 32rem;
+    background-color: rgb(131, 194, 129);
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+}
+.block{
+    width: 20rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+#listFirst{
+    font-size: 16px;
+    font-weight: bold;
+}
+#verify{
+    margin-top: 2rem;
+}
+.form{
+    width: 3rem;
+    height: 2.5rem;
+    text-align: center;
+    font-size: x-large;
+    font-weight: bolder;
+    border-radius: 0.5rem;
+}
+#prompts, #prompts2{
+    color: white;
+}

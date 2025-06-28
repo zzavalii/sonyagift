@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="stylesheet" href="/page1/style.css">
+    <title>Document</title>
+</head>
+<body class="bg-dark">
+    <h5 class="text-center text-light container mt-3">Вот ты и дошла ко 2 блоку. Тут я думаю тебе будет проще. Все остается так же, нужно угадать какие буквы писать в поля.</h5>
+    <ol class="list mx-auto" id="listFirst">
+        <li>
+            <div class="block">
+                <h3 style="color:rgb(98, 156, 222)">_ _._ _ _ _ _ </h3>
+                <h3>,</h3>
+                <h3 style="color:rgb(131, 194, 129)">_ _._ _ _ _ _</h3>
+            </div>
+            <div class="conlist1">
+                <ol>
+                    <li>Нумерация копеек которые есть в нашей стране. 10, 25, 50, 1, 2, ... , 10</li>
+                    <li>Персонаж с Фиксиков - цифра(2 шт)</li>
+                    <li>2 цифры моего номера телефона, но вот тебе подсказка. 6 &lt; ... &lt;9</li>
+                    <li>Первая карта(цифра) колоды из 36 карт</li>
+                    <li>Твой возраст + мой * 2 + 5</li>
+                </ol>
+            </div>
+            <div class="conlist2">
+                <ol>
+                    <li>Первые 2 цифры после запятой числа Пи</li>
+                    <li>Fire(норвежский)</li>
+                    <li>Сколько тебе было лет год назад</li>
+                    <li>Самая первая цифра</li>
+                    <li>Если есть набор из чисел (0, 1, 2, 3, 4, 5). 5 какая по счету? (индекс)</li>
+                </ol>
+            </div>
+        </li>
+        <li>#FF9900</li>
+        <li>E - 3</li>
+        <li>N_w 530(мои кроссы)</li>
+        <li>2 нота гаммы</li>
+        <li>laege(english)</li>
+        <li>360 градусов это(на англ)</li>
+    </ol>
+
+
+    <div class="container">
+        <h4 class="text-light">Сюда тебе надо вводить буквы которые у тебя получились</h4>
+        <div class="all" id="formcontrol2">
+            <input type="text" id="firstlttr2" class="form-control">
+            <input type="text" id="secondlttr2" class="form-control">
+            <input type="text" id="thirdlttr2" class="form-control">
+            <input type="text" id="fourthlttr2" class="form-control">
+            <input type="text" id="fifthlttr2" class="form-control">
+            <input type="text" id="sixthlttr2" class="form-control">
+            <input type="text" id="seventhlttr2" class="form-control">
+        </div>
+        <h1 class="text-light text-center" id="winner2"></h1>
+        <button class="btn btn-success" id="verify2">Проверить правильность</button>
+    </div>
+    <div class="prompt text-center d-flex justify-content-center align-items-center gap-1 mt-2">
+        <input type="text" class="form" id="inputprompt2">
+        <button class="btn btn-warning" id="btnprompt2">Подсказка</button>
+        <span id="prompts2">Вводи номер задания если не получается решить самой</span>
+    </div>
+    <script src="/page3/windowTwoLetter.js"></script>
+</body>
+</html>
