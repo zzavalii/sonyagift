@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">'
+    <link rel="stylesheet" href="/page1/style.css">
+    <title>Document</title>
+</head>
+<body class="bg-dark">
+    <h3 class="text-center text-light container mt-2">Теперь тебе надо отгадать слово. Тебе нужно догадаться к чему ведут подсказки и что тебе надо записывать в клеточки. Слово будет на английском</h3>
+    <h5 class="text-center text-light container">Можешь делать не подряд, а выборочно и потом по буквам попробовать погадать</h5>
+    <ol class="list mx-auto mt-4" id="listFirst">
+        <li>Мой любимый трек.</li>
+        <li>
+            <div class="block">
+                <h3 style="color:rgb(98, 156, 222)">_ _._ _ _ _ _ </h3>
+                <h3>,</h3>
+                <h3 style="color:rgb(131, 194, 129)">_ _ _._ _ _ _ _</h3>
+            </div>
+            <div class="conlist1">
+                <ol>
+                    <li>20+19 = </li>
+                    <li>2*2*0 = </li>
+                    <li>Дата(число) когда я тебя поцеловал</li>
+                    <li>y=5x+50; x=5</li>
+                </ol>
+            </div>
+            <div class="conlist2">
+                <ol>
+                    <li>Корень с 15625</li>
+                    <li>Sedem</li>
+                    <li>Самая главная твоя оценка. По словацким меркам</li>
+                    <li>23*37 = </li>
+                </ol>
+            </div>
+        </li>
+        <li>slOvakia</li>
+        <li>Твоя милая подушка с милым носиком. На англ название</li>
+        <li>... > бадминтон</li>
+    </ol>
+    <div class="container">
+        <h4 class="text-light">Сюда тебе надо вводить буквы которые у тебя получились</h4>
+        <div class="all" id="formcontrol">
+            <input type="text" id="firstlttr" class="form-control">
+            <input type="text" id="secondlttr" class="form-control">
+            <input type="text" id="thirdlttr" class="form-control">
+            <input type="text" id="fourthlttr" class="form-control">
+            <input type="text" id="fifthlttr" class="form-control">
+        </div>
+        <h1 class="text-light text-center" id="winner"></h1>
+        <button class="btn btn-success" id="verify">Проверить правильность</button>
+    </div>
+    <div class="prompt text-center d-flex justify-content-center align-items-center gap-1 mt-2">
+        <input type="text" class="form" id="inputprompt">
+        <button class="btn btn-warning" id="btnprompt">Подсказка</button>
+        <span id="prompts">Вводи номер задания если не получается решить самой</span>
+    </div>
+    <script src="./windowLetter.js"></script>
+</body>
+</html>
