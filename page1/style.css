@@ -1,3 +1,27 @@
+/*--------SCROLLBAR------------*/
+/* Стандартный стиль для всех элементов */
+::-webkit-scrollbar {
+  width: 10px;              /* Ширина вертикального скроллбара */
+  height: 10px;             /* Высота горизонтального скроллбара */
+}
+
+/* Фоновая часть скроллбара */
+::-webkit-scrollbar-track {
+  background: #888;
+}
+    
+/* "Ползунок" (бегунок) */
+::-webkit-scrollbar-thumb {
+  background-color: #5e5555;
+  border-radius: 0.5rem;
+}
+
+/* При наведении на ползунок */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+/* -------------------------- */
+
 .all{
     margin-top: 1rem;
     display: flex;
@@ -16,6 +40,12 @@
     height: 5rem;
     font-size: xx-large;
     font-weight: bolder;
+    background-color: rgb(148, 121, 121);
+    border: 1px black;
+}
+.form-control:focus {
+  background-color: #942e2e; /* Цвет фона при фокусе */
+  outline: none; /* Убирает обводку по умолчанию, если нужно */
 }
 .list{
     color: white;
