@@ -1,4 +1,3 @@
-const success = document.getElementById('success');
 const successmore = document.getElementById('successmore');
 const decline = document.getElementById('decline');
 
@@ -21,12 +20,12 @@ window.addEventListener('DOMContentLoaded', ()=>{
     decline.style.top = `${randomY}px`;
 
     // увеличение success при наведении на decline
-    const currentWidth = parseInt(getComputedStyle(success).width);
-    const currentHeight = parseInt(getComputedStyle(success).height);
+    const currentWidth = parseInt(getComputedStyle(successmore).width);
+    const currentHeight = parseInt(getComputedStyle(successmore).height);
     const newWidth = currentWidth + 50;
     const newHeight = currentHeight + 50;
-    success.style.width = `${newWidth}px`;
-    success.style.height = `${newHeight}px`;
+    successmore.style.width = `${newWidth}px`;
+    successmore.style.height = `${newHeight}px`;
     })
 })
 

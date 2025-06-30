@@ -1,32 +1,48 @@
 /*--------SCROLLBAR------------*/
-/* Стандартный стиль для всех элементов */
 ::-webkit-scrollbar {
-  width: 10px;              /* Ширина вертикального скроллбара */
-  height: 10px;             /* Высота горизонтального скроллбара */
+    width: 10px; 
+    height: 10px;
 }
 
-/* Фоновая часть скроллбара */
 ::-webkit-scrollbar-track {
-  background: #888;
+    background: #ffffff;
 }
     
-/* "Ползунок" (бегунок) */
 ::-webkit-scrollbar-thumb {
-  background-color: #5e5555;
-  border-radius: 0.5rem;
+    background-color: #848080;
+    border-radius: 0.5rem;
 }
 
-/* При наведении на ползунок */
 ::-webkit-scrollbar-thumb:hover {
-  background: #555;
+    background: #555;
 }
 /* -------------------------- */
 
-.all{
-    margin-top: 1rem;
+/* ------------- Index main ------------- */
+
+.bg{
+    background-color: #3F4739;
+}
+.bgindex{
+    background-image: url(/pic/cat.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh; 
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+}
+.flex-container{
     display: flex;
-    flex-direction: row;
-    gap: 0.4rem;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+.buttons{
+    display: flex;
+    justify-content: flex-start;
+    width: 30vw;
 }
 .container{
     display: flex;
@@ -34,18 +50,95 @@
     justify-content: center;
     flex-direction: column;
 }
+
+/* ====== Кнопка ДАААААА ======= */
+#successmore{
+    width: 13rem;
+    height: 13rem;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    outline: none;
+    vertical-align: middle;
+    text-decoration: none;
+    font-size: 0.8rem;
+}
+button#successmore {
+    font-weight: 600;
+    color: #382b22;
+    text-transform: uppercase;
+    padding: 0.5em 1em;
+    background: #E1F4CB;
+    border: 1px solid #b18597;
+    border-radius: 100rem;
+    transition: transform 0.15s;
+    transform-style: preserve-3d;
+}
+button#successmore:hover {
+    background: #BACBA9;
+    transform: translate(0, 0.25em);
+}
+button#successmore:hover::before {
+    box-shadow: 0 0 0 2px #b18597, 0 0.5em 0 0 #ffe3e2;
+    transform: translate3d(0, 0.5em, -1em);
+}
+
+/* ====== Кнопка Не ======= */
+#decline{
+    width: 13rem;
+    height: 13rem;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    outline: none;
+    vertical-align: middle;
+    text-decoration: none;
+    font-size: 0.8rem;
+}
+button#decline {
+    font-weight: 600;
+    color: #382b22;
+    text-transform: uppercase;
+    padding: 0.5em 1em;
+    background: #df2e3f;
+    border: 1px solid #b18597;
+    border-radius: 100rem;
+    transition: transform 0.15s;
+    transform-style: preserve-3d;
+}
+button#decline:hover {
+    background: #BACBA9;
+    transform: translate(0, 0.25em);
+}
+button#decline:hover::before {
+    box-shadow: 0 0 0 2px #b18597, 0 0.5em 0 0 #ffe3e2;
+    transform: translate3d(0, 0.5em, -1em);
+}
+
+/* ------------- Block 1 <5> letter ------------- */
+
+.all{
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: row;
+    gap: 0.4rem;
+}
 .form-control{
     text-align: center;
     width: 7rem;
     height: 5rem;
     font-size: xx-large;
     font-weight: bolder;
-    background-color: rgb(148, 121, 121);
+    background-color: #717568;
     border: 1px black;
+    caret-color: rgb(140, 182, 103);
 }
 .form-control:focus {
-  background-color: #942e2e; /* Цвет фона при фокусе */
-  outline: none; /* Убирает обводку по умолчанию, если нужно */
+    background-color: #BACBA9; 
 }
 .list{
     color: white;
@@ -56,23 +149,25 @@
 .conlist1{
     padding: 0.5rem;
     width: 32rem;
-    background-color: rgb(98, 156, 222);
+    background-color: #BACBA9;
     border-radius: 1rem;
     margin-top: 1rem;
+    color: #3F4739;
 }
 .conlist2{
     margin-top: 0.5rem;
     padding: 0.5rem;
     width: 32rem;
-    background-color: rgb(131, 194, 129);
+    background-color: #E9DAB2;
     border-radius: 1rem;
     margin-bottom: 1rem;
+    color: #3F4739;
 }
 .block{
-    width: 20rem;
+    width: 21rem;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 #listFirst{
     font-size: 16px;
@@ -91,4 +186,84 @@
 }
 #prompts, #prompts2{
     color: white;
+}
+
+/* ====== Кнопка проверки правильности ======= */
+#verify{
+    margin-top: 0.5rem;
+    width: 15rem;
+    height: 2.5rem;
+    border-radius: 50px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    outline: none;
+    border: 0;
+    vertical-align: middle;
+    text-decoration: none;
+    font-size: 0.8rem;
+}
+button#verify {
+    font-weight: 600;
+    color: #382b22;
+    text-transform: uppercase;
+    padding: 0.5em 1em;
+    background: #E1F4CB;
+    border: 2px solid #b18597;
+    border-radius: 0.75em;
+    transition: transform 0.15s;
+    transform-style: preserve-3d;
+}
+button#verify:hover {
+    background: #BACBA9;
+    transform: translate(0, 0.25em);
+}
+button#verify:hover::before {
+    box-shadow: 0 0 0 2px #b18597, 0 0.5em 0 0 #ffe3e2;
+    transform: translate3d(0, 0.5em, -1em);
+}
+
+/* ====== Кнопка подсказки ======= */
+#btnprompt{
+    width: 8rem;
+    height: 2.5rem;
+    border-radius: 50px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    outline: none;
+    border: 0;
+    vertical-align: middle;
+    text-decoration: none;
+    font-size: 0.8rem;
+}
+button#btnprompt {
+    font-weight: 600;
+    color: #382b22;
+    text-transform: uppercase;
+    padding: 0.5em 1em;
+    background: #E1F4CB;
+    border: 2px solid #b18597;
+    border-radius: 0.75em;
+    transition: transform 0.15s;
+    transform-style: preserve-3d;
+}
+button#btnprompt:hover {
+    background: #BACBA9;
+    transform: translate(0, 0.25em);
+}
+button#btnprompt:hover::before {
+    box-shadow: 0 0 0 2px #b18597, 0 0.5em 0 0 #ffe3e2;
+    transform: translate3d(0, 0.5em, -1em);
+}
+
+
+
+
+body{
+    font-family: "Montserrat", sans-serif;
 }
