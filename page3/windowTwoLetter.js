@@ -29,18 +29,27 @@ verify2.onclick = function () {
 
     const allWord2 = inputs2.map(input => input.value.toLowerCase()).join('');
 
-    if (allWord2 === answer2.join('')){
-        formcontrol2.style.display = 'none'
-        verify2.style.display = 'none'
+    if (allWord2 === answer2.join('')) {
+    // Очищаем всё содержимое страницы
+    document.body.innerHTML = '';
 
-        inputprompt2.style.display = 'none'
-        btnprompt2.style.display = 'none'
-        prompts2.style.display = 'none'
+    // Меняем фон на картинку
+    document.body.style.backgroundImage = "url('/pic/final.jpg')";
+    document.body.style.backgroundSize = "cover";
+    document.body.style.backgroundPosition = "center 20%";
+    document.body.style.backgroundRepeat = "no-repeat";
 
-        winner2.innerHTML = 'Умница :) Скоро отдам тебе подарочек твой. Он будет с доп презентом)'
-    } else {
-        winner2.innerHTML = ' '
-    }
+    // Создаём элемент для текста
+    const winnerText = document.createElement('h1');
+    winnerText.innerText = 'Умница :) Скоро отдам тебе подарочек твой. Он будет с доп презентом)';
+    winnerText.style.color = 'white';
+    winnerText.style.textAlign = 'center';
+    winnerText.style.marginTop = '30vh';
+    winnerText.style.fontSize = '2rem';
+
+    // Добавляем его в body
+    document.body.appendChild(winnerText);
+}
 };
 
 btnprompt2.onclick = function(){
