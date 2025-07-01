@@ -13,6 +13,11 @@ const prompts = document.getElementById('prompts')
 const winner = document.getElementById('winner')
 const verify = document.getElementById('verify')
 
+const hide = document.getElementById('hide')
+const listFirst = document.getElementById('listFirst')
+
+winner.style.display = 'none'
+
 verify.onclick = function () {
     const answer = ['s', 'p', 'o', 'r', 't'];
     const inputs = [firstlttr, secondlttr, thirdlttr, fourthlttr, fifthlttr];
@@ -28,16 +33,26 @@ verify.onclick = function () {
     const allWord = inputs.map(input => input.value.toLowerCase()).join('');
 
     if (allWord === answer.join('')){
+
         formcontrol.style.display = 'none'
         verify.style.display = 'none'
+        hide.style.display = 'none'
+        listFirst.style.display = 'none'
 
         inputprompt.style.display = 'none'
         btnprompt.style.display = 'none'
         prompts.style.display = 'none'
 
+        winner.style.display = 'block'
+
         winner.innerHTML = `
         <p>Умничка моя, ты угадала, теперь следующий этап. Надо угадать что именно за предмет.</p>
         <button class="btn btn-primary mt-2" onclick="location.href='/page3/windowTwoLetter.html'">Далее</button>`;
+
+        document.body.style.backgroundImage = "url('/pic/final.jpg')";
+        document.body.style.backgroundSize = "cover";
+        document.body.style.backgroundPosition = "center 20%";
+        document.body.style.backgroundRepeat = "no-repeat"; 
         
     } else {
         winner.innerHTML = ' '
