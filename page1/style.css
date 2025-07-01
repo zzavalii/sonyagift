@@ -196,7 +196,7 @@ button#decline:hover::before {
 #prompts, #prompts2{
     color: white;
 }
-#winner {
+#winnerblock {
     display: flex;
     flex-direction: column;
     justify-content: center; 

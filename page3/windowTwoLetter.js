@@ -30,16 +30,13 @@ verify2.onclick = function () {
     const allWord2 = inputs2.map(input => input.value.toLowerCase()).join('');
 
     if (allWord2 === answer2.join('')) {
-    // Очищаем всё содержимое страницы
     document.body.innerHTML = '';
 
-    // Меняем фон на картинку
     document.body.style.backgroundImage = "url('/pic/final.jpg')";
     document.body.style.backgroundSize = "cover";
     document.body.style.backgroundPosition = "center 20%";
     document.body.style.backgroundRepeat = "no-repeat";
 
-    // Создаём элемент для текста
     const winnerText = document.createElement('h1');
     winnerText.innerText = 'Умница :) Скоро отдам тебе подарочек твой. Он будет с доп презентом)';
     winnerText.style.color = 'white';
@@ -47,7 +44,6 @@ verify2.onclick = function () {
     winnerText.style.marginTop = '30vh';
     winnerText.style.fontSize = '2rem';
 
-    // Добавляем его в body
     document.body.appendChild(winnerText);
 }
 };
@@ -70,6 +66,12 @@ btnprompt2.onclick = function(){
             break;
         case '5':
             prompts2.innerHTML = 'Тут тебе и не надо подсказка, но все же оставлю. ДО РЕ МИ ФА СОЛЬ ЛЯ СИ';
+            break;
+        case '6':
+            prompts2.innerHTML = 'Зачастую такое ты встречала в книге по английскому, когда надо составить слово из букв, которые есть у тебя. (Орел)';
+            break;
+        case '7':
+            prompts2.innerHTML = 'Тут я думаю ты справишься, 360 - круг(circle)';
             break;
         default:
             prompts2.innerHTML = 'Такой подсказки нет';

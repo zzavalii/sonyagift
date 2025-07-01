@@ -12,7 +12,7 @@
 </head>
 <body class="bg">
     <h3 id="hide" class="text-center text-light container mt-1">Теперь тебе надо отгадать слово. Тебе нужно догадаться к чему ведут подсказки и что тебе надо записывать в клеточки. Слово будет на английском</h3>
-    <h5 class="text-center text-light container">Можешь делать не подряд, а выборочно и потом по буквам попробовать погадать</h5>
+    <h5 id="hide1" class="text-center text-light container">Можешь делать не подряд, а выборочно и потом по буквам попробовать погадать</h5>
     <ol class="list mx-auto mt-4" id="listFirst">
         <li>Мой любимый трек.</li>
         <li>
@@ -43,7 +43,7 @@
         <li>... > бадминтон</li>
     </ol>
     <div class="container">
-        <h4 class="text-light">Сюда тебе надо вводить буквы которые у тебя получились</h4>
+        <h4 id="hide2" class="text-light">Сюда тебе надо вводить буквы которые у тебя получились</h4>
         <div class="all" id="formcontrol">
             <input type="text" id="firstlttr" class="form-control">
             <input type="text" id="secondlttr" class="form-control">
@@ -51,7 +51,9 @@
             <input type="text" id="fourthlttr" class="form-control">
             <input type="text" id="fifthlttr" class="form-control">
         </div>
-        <h1 class="text-light text-center" id="winner"></h1>
+        <div id="winnerblock">
+            <h1 class="text-light text-center" id="winner"></h1>
+        </div>
         <button class="" id="verify">Проверить правильность</button>
     </div>
     <div class="prompt text-center d-flex justify-content-center align-items-center gap-1 mt-2">
