@@ -30,22 +30,44 @@ verify2.onclick = function () {
     const allWord2 = inputs2.map(input => input.value.toLowerCase()).join('');
 
     if (allWord2 === answer2.join('')) {
-    document.body.innerHTML = '';
+        document.body.innerHTML = '';
 
-    document.body.style.backgroundImage = "url('/pic/final.jpg')";
-    document.body.style.backgroundSize = "cover";
-    document.body.style.backgroundPosition = "center 20%";
-    document.body.style.backgroundRepeat = "no-repeat";
+        document.body.style.backgroundImage = "url('/pic/final.jpg')";
+        document.body.style.backgroundSize = "cover";
+        document.body.style.backgroundPosition = "center 20%";
+        document.body.style.backgroundRepeat = "no-repeat";
 
-    const winnerText = document.createElement('h1');
-    winnerText.innerText = 'Умница :) Скоро отдам тебе подарочек твой. Он будет с доп презентом)';
-    winnerText.style.color = 'white';
-    winnerText.style.textAlign = 'center';
-    winnerText.style.marginTop = '30vh';
-    winnerText.style.fontSize = '2rem';
+        winner2.innerHTML = `
+            <h1>Умница :) Скоро отдам тебе подарочек твой. Он будет с доп презентом)</h1>
+            <div class="d-flex justify-content-center mt-2">
+                <button class="meow">Тык</button>
+            </div>
+            `;
 
-    document.body.appendChild(winnerText);
-}
+        winner2.style.color = 'white';
+        winner2.style.textAlign = 'center';
+        winner2.style.marginTop = '30vh';
+        winner2.style.fontSize = '2rem';
+
+        document.body.appendChild(winner2);
+
+        const meowButton = document.querySelector('.meow')
+
+        meowButton.onclick = function() {
+            const heart = document.createElement('div');
+            const textLove = document.createElement('h1');
+            heart.textContent = '❤️';
+            heart.textContent = 'Я тебя очень сильно люблю, надеюсь тебе понравилось решать это все)';
+            
+            //добавление класса heart к элементу heart
+            heart.classList.add('heart'); 
+
+            document.body.appendChild(heart);
+
+            setTimeout(() => heart.remove(), 3000);
+        };
+
+    }
 };
 
 btnprompt2.onclick = function(){
