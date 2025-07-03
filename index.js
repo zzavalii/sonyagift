@@ -38,4 +38,3 @@ successmore.onclick = function() {
     window.location.href = "page2/windowLetter.html";
 };
 
-
