@@ -25,7 +25,7 @@
     font-family: "Montserrat", sans-serif;
 }
 .bgindex{
-    background-image: url(img/cat.jpg);
+    background-image: url(../img/cat.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
