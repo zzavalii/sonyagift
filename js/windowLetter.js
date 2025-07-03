@@ -55,7 +55,7 @@ verify.onclick = function () {
         <p>Умничка моя, ты угадала, теперь следующий этап. Надо угадать что именно за предмет.</p>
         <button class="btn btn-primary mt-2" onclick="location.href='windowTwoLetter.html'">Далее</button>`;
 
-        document.body.style.backgroundImage = "url('../img/2cat.jpg')";
+        document.body.style.backgroundImage = "url('img/2cat.jpg')";
         document.body.style.backgroundSize = "cover";
         document.body.style.backgroundPosition = "center 50%";
         document.body.style.backgroundRepeat = "no-repeat"; 
