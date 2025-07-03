@@ -210,7 +210,7 @@ button#decline:hover::before {
 
 /* ====== Кнопка проверки правильности ======= */
 #verify{
-    margin-top: 0.5rem;
+    margin-top: 1rem;
     width: 15rem;
     height: 2.5rem;
     border-radius: 50px;
@@ -240,9 +240,10 @@ button#verify:hover {
     background: #BACBA9;
     transform: translate(0, 0.25em);
 }
+
 button#verify:hover::before {
-    box-shadow: 0 0 0 2px #b18597, 0 0.5em 0 0 #ffe3e2;
-    transform: translate3d(0, 0.5em, -1em);
+    box-shadow: 0px 0px 3px 10px #387434, 0.5em 0.5em 3em 0 #4e7d48;
+    transform: translate3d(0.1em, 0.1em, -0.55em);
 }
 
 /* ====== Кнопка подсказки ======= */

@@ -55,9 +55,7 @@ verify2.onclick = function () {
 
         meowButton.onclick = function() {
             const heart = document.createElement('div');
-            const textLove = document.createElement('h1');
             heart.textContent = '❤️';
-            heart.textContent = 'Я тебя очень сильно люблю, надеюсь тебе понравилось решать это все)';
             
             //добавление класса heart к элементу heart
             heart.classList.add('heart'); 
