@@ -32,7 +32,7 @@ verify2.onclick = function () {
     if (allWord2 === answer2.join('')) {
         document.body.innerHTML = '';
 
-        document.body.style.backgroundImage = "url('/pic/final.jpg')";
+        document.body.style.backgroundImage = "url('/img/final.jpg')";
         document.body.style.backgroundSize = "cover";
         document.body.style.backgroundPosition = "center 20%";
         document.body.style.backgroundRepeat = "no-repeat";

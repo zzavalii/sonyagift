@@ -35,6 +35,5 @@ window.addEventListener('DOMContentLoaded', () => {
 });
 
 successmore.onclick = function() {
-    window.location.href = "page2/windowLetter.html";
-};
-
+    window.location.href = "/windowLetter.html";
+}
